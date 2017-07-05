@@ -1,0 +1,193 @@
+.variant {
+    height: 1596px;
+    width: 100vw;
+    position: relative;
+    overflow: hidden; 
+    display: flex;
+    padding-top: 67px;
+}
+.variant_bgc {
+    top: 0;
+    position: absolute;
+    width: 1920px;
+    align-self: center;
+    height: 781px;
+    background-color: #F9F9F9;
+}
+.variant__header {
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+}
+.variant__block {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.variant__block--item {
+    width: 350px;
+    height: 855px;
+    background-color: #fff;
+    border: 1px solid #E2E3E5;
+    color: #DB2F56;
+}
+.var__item--border {
+    width: 100%;
+    height: 8px;
+        background: linear-gradient(to right,#9e139a,#df1A38);
+}
+.var__item--header {
+    height: 77px;
+    display: flex;
+    font-size: 24px;
+    font-weight: 500;
+    color: #DB2F56;
+    box-sizing: border-box;
+    border-bottom: 1px solid #E2E3E5;
+    align-items: center;
+    justify-content: center;
+}
+.variant__block--3 .var__item--border {
+    background: transparent;
+}
+.variant__block--3 {
+    background: linear-gradient(to right,#9e139a,#df1A38);
+    color: #fff;
+}
+.variant__block--3 .var__item--header {
+    color: #fff;
+}
+.var__item--price {
+    height: 168px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    // border-top: 1px solid #E2E3E5;
+    border-bottom: 1px solid #E2E3E5;
+}
+.var__item--price-pr {
+    margin-top: 40px;
+    font-size: 24px;
+}
+.var__item--list {
+    height: 350px;
+    border-bottom: 1px solid #E2E3E5;
+}
+.var__item--price-text {
+    font-size: 18px;
+    margin-top: 22px;
+    line-height: 26px;
+    color: #666666;
+    text-align: center;
+    width: 80%;
+}
+.variant__block--3 .var__item--price-text {
+    color: #fff;
+}
+.var__item--list {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+}
+.variant__block--2 .var__item--list-head {
+    margin-top: 26px;
+}
+.variant__block--3 .var__item--list-head {
+    color: #fff;
+}
+.var__item--list-head {
+    font-size: 16px;
+    color: #000;
+    margin-top: 29px;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.var__item--list-common {
+    margin-left: 19px;
+    font-size: 16px;
+    color: #000;
+    margin-top: 17px;
+    padding-left: 30px;
+    background-image: url(../img/sota-small-color.png);
+    background-position: 0 7px;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    line-height: 22px;
+}
+.var__item--list-4,
+.var__item--list-5,
+.var__item--list-6,
+.var__item--list-7 {
+    background-image: none;
+}
+.variant__block--3 .var__item--list-common {
+    background-image: url(../img/sota_small-white.png);
+    color: #fff;
+}
+.var__item--footer-head {
+    margin-top: 28px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 44px;
+}
+.var__item--list-price {
+    font-size: 16px;
+    color: #000;
+    text-align: center; 
+}
+.list-price__big  {
+    font-size: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.var__item--foot {
+    color: #666666;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 38px;
+    width: 85%;
+    line-height: 26px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.variant__block--3 .var__item--foot {
+    color: #FFE9EA;
+}
+.variant__block--3 .var__item--list-price {
+    color: #fff;
+}
+.variant__requirement {
+    height: 242px;
+    background-color: #F9F9F9;
+    margin-top: 121px;
+    display: flex;
+    padding-left: 76px;
+}
+.requirement__block--1 {
+    width: 239px;
+    padding-top: 65px;
+    margin-right: 108px;
+}
+.requirement__block--head {
+    font-size: 24px;
+}
+.requirement__block--text {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 9px;
+}
+.requirement__block--2text {
+    padding-top: 49px;
+    line-height: 26px;
+    font-size: 18px;
+}
+.block--2text-red {
+    color: #DF1A38;
+}
+.block--2text-small {
+    font-size: 14px;
+}

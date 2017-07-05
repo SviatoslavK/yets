@@ -1,0 +1,101 @@
+.start {
+    height: 988px;
+    margin-top: 130px;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.start__header {
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+}
+.start__images {
+    position: absolute;
+    width: 1920px;
+    align-self: center;
+    height: 710px;
+    bottom: 0;
+    // background-color: #eee;
+    background: linear-gradient(to right, #9E139A, #DF1A38);
+
+}
+.start_air {
+    width: 1362px;
+    height: 363px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../img/start_air.png);
+    @include background;
+}
+.start__block {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    // height: 500px;
+}
+.start__block--item {
+    width: 350px;
+    height: 100%;
+    // background-color: #eee;
+}
+.start__block--item1 {
+    padding-top: 38px;
+    width: 100%;
+    height: 475px;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.06);
+    position: relative;
+}
+.start__block--item2,
+.start__block--item3,
+.start__block--item4,
+.start__block--item5 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 72px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 100%;
+    height: 227px;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.06);
+    position: relative;
+    line-height: 30px;
+}
+.start__block--item3 {
+    margin-top: 58px;
+}
+.start__block--item4 {
+    margin-top: 146px;
+    height: 265px;
+}
+.start__block--item5  {
+    height: 216px;
+}
+.start__sota {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 44px;
+    background-image: url(../img/sota.png);
+    @include background;
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+.start__sota--1 {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.start__text--red {
+    color: #CC242A;
+}

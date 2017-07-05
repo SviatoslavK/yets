@@ -1,27 +1,28 @@
+@import '_strict-reset';
 @import "_variables";
 
 // Media-queries mixin. Mobile first method
 @mixin respond-to($media) {
     @if $media == mobile {
-        @media (max-width: $tablet - 1) { @content; }
+        @media (min-width: 480px) and (max-width: 767px){ @content; }
     }
     @else if $media == tablet {
-        @media (min-width: $tablet) { @content; }
+        @media (min-width: 768px) and (max-width: 1139px) { @content; }
     }
-    @else if $media == desktop {
-        @media (min-width: $desktop) { @content; }
+    @else if $media == small {
+        @media (min-width: 320px) and (max-width: 479px) { @content; }
     }
 }
 
 //
-@mixin desktop {
-    @include respond-to(desktop) {
-        @content
-            }
-    .old-ie & {
-        @content
-            }
-}
+// @mixin desktop {
+//     @include respond-to(desktop) {
+//         @content
+//             }
+//     .old-ie & {
+//         @content
+//             }
+// }
 
 // Background mixin
 @mixin background {
@@ -39,12 +40,14 @@
     margin: auto;
 }
 .container {
-    width: 320px;
+    font-family: 'Exo 2', sans-serif;
+    position: relative;
+    width: 1200px;
     margin: 0 auto;
-    @include respond-to(tablet) {
-        width: 768px;
-    }
-    @include desktop {
-        width: 960px;
-    }
+    height: 100%;
+    z-index: 50;
+    overflow: hidden;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
