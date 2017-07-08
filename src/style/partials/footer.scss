@@ -2,12 +2,14 @@
     height: 621px;
     background-image: url(../img/footer_bgc.png);
     @include background;
+    width: 1200px;
+    padding-top: 219px;
 }
 .footer__info {
     width: 100%;
     display: flex;
     height: 220px;
-    margin-top: 219px;
+    // margin-top: 219px;
     background-color: rgba(255,255,255, 0.75);
     padding-left: 39px;
     justify-content: space-between;
