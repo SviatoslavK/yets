@@ -51,3 +51,22 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+::-webkit-input-placeholder {
+    color: #8C8C8C;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #8C8C8C;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #8C8C8C;
+    opacity: 1;
+}
+
+::placeholder {
+    color: #8C8C8C;
+    opacity: 1;
+}

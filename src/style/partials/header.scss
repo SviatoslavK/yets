@@ -138,6 +138,7 @@
     border-radius: 4px;
     padding-top: 50px;
     padding-left: 80px;
+    display: flex;
 }
 .who__textblock {
     display: inline-block;
@@ -156,7 +157,114 @@
 }
 .who__images {
     display: inline-block;
+    position: relative;
     width: 636px;
     height: 478px;
     background-color: #eee;
+}
+.images__border {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 10px solid #720011;
+	border-image: linear-gradient(to right top, #5C0059 0%, #720011 100%);
+	border-image-slice: 1;
+    z-index: 100;
+}
+
+.b-carousel {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+    height: 100%;
+	box-sizing: border-box;
+	// border: 1px solid;
+}
+
+	.b-carousel__prev,
+	.b-carousel__next {
+		position: absolute;
+		top: 50%;
+		left: 20px;
+		width: 50px;
+		height: 50px;
+		background: #fff;
+		transform: translateY(-50%) translateZ(0);
+		cursor: pointer;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		z-index: 3;
+        display: none;
+	}
+
+		.b-carousel__next {
+			left: auto;
+			right: 20px;
+		}
+
+	.b-carousel__wrap {
+		display: flex;
+		transition: transform .5s;
+		will-change: transform;
+		position: relative;
+		z-index: 1;
+		height: 100%;
+	}
+
+		.b-carousel__item {
+			flex: 0 0 100%;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+.s-notransition {
+	transition: 0s;
+}
+			.b-carousel__img {
+				width: 100%;
+				display: block;
+                height: 100%;
+                @include background;
+                
+			}
+.carousel__slide--1 {
+    background-image: url(../img/slide-1.jpg);
+}
+.carousel__slide--2 {
+    background-image: url(../img/slide-4.jpg);
+}
+.carousel__slide--3 {
+    background-image: url(../img/slide-5.jpg);
+}
+.carousel__slide--4 {
+    background-image: url(../img/slide-6.jpg);
+}
+.carousel__slide--5 {
+    background-image: url(../img/slide-7.jpg);
+}
+.carousel__slide--6 {
+    background-image: url(../img/slide-8.jpg);
+}
+.carousel__slide--7 {
+    background-image: url(../img/slide-9.jpg);
+}
+.carousel__slide--8 {
+    background-image: url(../img/slide-10.jpg);
+}
+.carousel__slide--9 {
+    background-image: url(../img/slide-11.jpg);
+}
+.carousel__slide--10 {
+    background-image: url(../img/slide-12.jpg);
+}
+.carousel__slide--11 {
+    background-image: url(../img/slide-13.jpg);
+}
+.carousel__slide--12 {
+    background-image: url(../img/slide-14.jpg);
 }

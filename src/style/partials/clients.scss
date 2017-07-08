@@ -6,6 +6,22 @@
 .clients {
     padding-top: 146px;
     height: 991px;
+    background-repeat: no-repeat;
+}
+.client__ava {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #eee;
+    border: 5px solid #DF1A38;
+    position: relative;
+    @include background;
+}
+.client__ava:hover {
+    cursor: pointer;
 }
 .clients__client {
     position: absolute;
@@ -13,71 +29,171 @@
     justify-content: center;
     align-items: center;
 }
+.comment {
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    width: 700px;
+    max-height: 250px;
+    right: -50px;
+    background-color: #fff;
+    padding-left: 45px;
+    padding-top: 25px;
+    padding-right: 80px;
+    padding-bottom: 30px;
+    left: 120%;
+    font-size: 18px;
+    line-height: 22px;
+    top: 35%;
+    z-index: 100;
+    // overflow: hidden;
+    box-shadow: 0 0 9px 0 rgba(224,224,224,0.5);
+}
 .clients__client--1 {
     height: 255px;
     width: 255px;
     top: 70px;
     left: 30px;
+    & .client__ava {
+        background-image: url(../img/WilliamJunior.jpg);
+        width: 162px;
+        height: 162px;
+        
+    }
 }
 .clients__client--2 {
     height: 220px;
     width: 220px;
     top: 141px;
     left: 352px;
+    & .client__ava {
+        background-image: url(../img/client_xz2.jpg);
+        width: 161x;
+        height: 161px;
+        & .comment {
+            left: -40%;
+            top: 115%;
+        }
+    }
 }
 .clients__client--3 {
     height: 220px;
     width: 220px;
     top: 96px;
     left: 621px;
+     & .client__ava {
+        background-image: url(../img/bogdan_k.jpg);
+        width: 117px;
+        height: 117px;
+        & .comment {
+            left: -220%;
+            top: 125%;
+        }
+    }
 }
 .clients__client--4 {
     height: 227px;
     width: 227px;
     top: 110px;
     left: 916px;
+     & .client__ava {
+        background-image: url(../img/client_xz.jpg);
+        & .comment {
+            left: -350%;
+            top: 115%;
+        }
+    }
 }
 .clients__client--5 {
     height: 210px;
     width: 210px;
     top: 352px;
     left: 66px;
+    & .client__ava {
+        background-image: url(../img/ksenia_z.jpg);
+    }
 }
 .clients__client--6 {
     height: 239px;
     width: 239px;
     top: 362px;
     left: 404px;
+    & .client__ava {
+        background-image: url(../img/natalia_m.jpg);
+        & .comment {
+            left: 0%;
+            top: -170%;
+        }
+    }
 }
 .clients__client--7 {
     height: 227px;
     width: 227px;
     top: 313px;
     left: 707px;
+     & .client__ava {
+        background-image: url(../img/julia_m.jpg);
+        & .comment {
+            left: -480%;
+            top: 25%;
+        }
+    }
 }
 .clients__client--8 {
     height: 239px;
     width: 239px;
     top: 357px;
     left: 954px;
+     & .client__ava {
+        background-image: url(../img/ksenia_k.jpg);
+        & .comment {
+            left: -450%;
+            top: 25%;
+        }
+    }
 }
 .clients__client--9 {
     height: 227px;
     width: 227px;
     top: 554px;
     left: 231px;
+     & .client__ava {
+        background-image: url(../img/PurplePurple.jpg);
+        width: 133px;
+        height: 133px;
+        & .comment {
+            left: 120%;
+            top: -125%;
+        }
+    }
 }
 .clients__client--10 {
     height: 220px;
     width: 220px;
     top: 540px;
     left: 619px;
+     & .client__ava {
+        background-image: url(../img/olchik_s.jpg);
+        width: 138px;
+        height: 138px;
+        & .comment {
+            left: -440%;
+            top: -205%;
+        }
+    }
 }
 .clients__client--11 {
     height: 239px;
     width: 239px;
     top: 590px;
     left: 860px;
+     & .client__ava {
+        background-image: url(../img/julia_xp.jpg);
+        & .comment {
+            left: -450%;
+            top: -95%;
+        }
+    }
 }
 .client__firstci {
     border-radius: 50%;
@@ -105,4 +221,57 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.comment__text {
+    overflow: auto;
+    height: 160px;
+    
+}
+.comment__close {
+    // display: block;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-image: url(../img/close.png);
+    @include background;
+    right: 17px;top: 17px;
+}
+.comment__close:hover {
+    cursor: pointer;
+}
+[checked] .comment {
+    display: block;
+}
+[checked] .client__ava {
+    display: block;
+}
+.hiddensss {
+    opacity: 0.3;
+    & .client__thirdci {
+        border-color: transparent;
+    }
+    & .client__secondci {
+        border-color: transparent;
+    }
+    & .client__firstci {
+        border-color: transparent;
+    }
+    & .client__ava {
+        border-color: #eee;
+    }
+}
+.comment__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 20;
+    background-color: transparent;
+}
+.comment__header {
+    font-size: 22px;
+    margin-bottom: 10px;
 }
