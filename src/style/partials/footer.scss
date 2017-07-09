@@ -2,7 +2,7 @@
     height: 621px;
     background-image: url(../img/footer_bgc.png);
     @include background;
-    width: 1200px;
+    min-width: 1200px;
     padding-top: 219px;
 }
 .footer__info {

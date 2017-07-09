@@ -4,7 +4,7 @@
 .header {
     height: 1300px;
     // width: 100vw;
-    width: 1200px;
+    min-width: 1200px;
     position: relative;
     overflow: hidden; 
     display: flex;

@@ -1,11 +1,11 @@
 .variant {
     height: 1596px;
-    width: 100vw;
+    // width: 100vw;
     position: relative;
     overflow: hidden; 
     display: flex;
     padding-top: 67px;
-    width: 1200px;
+    min-width: 1200px;
 }
 .variant_bgc {
     top: 0;
