@@ -5,7 +5,7 @@
     overflow: hidden; 
     display: flex;
     padding-top: 67px;
-    min-width: 1200px;
+    min-width: 1280px;
 }
 .variant_bgc {
     top: 0;
@@ -16,7 +16,7 @@
     background-color: #F9F9F9;
 }
 .variant__header {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 40px;
     text-align: center;
 }
@@ -28,7 +28,7 @@
 }
 .variant__block--item {
     width: 350px;
-    height: 855px;
+    // height: 855px;
     background-color: #fff;
     border: 1px solid #E2E3E5;
     color: #DB2F56;
@@ -42,7 +42,7 @@
     height: 77px;
     display: flex;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
     color: #DB2F56;
     box-sizing: border-box;
     border-bottom: 1px solid #E2E3E5;
@@ -71,10 +71,16 @@
 .var__item--price-pr {
     margin-top: 40px;
     font-size: 24px;
+    font-weight: 600;
 }
 .var__item--list {
     height: 350px;
     border-bottom: 1px solid #E2E3E5;
+}
+.variant__block--3 .var__item--list,
+.variant__block--3 .var__item--header,
+.variant__block--3 .var__item--price {
+    border-bottom: 1px solid rgba(255,255,255,0.25);
 }
 .var__item--price-text {
     font-size: 18px;
@@ -106,6 +112,8 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    line-height: 19px;
+    font-weight: 600;
 }
 .var__item--list-common {
     margin-left: 19px;
@@ -134,11 +142,14 @@
     text-align: center;
     font-size: 16px;
     margin-bottom: 44px;
+    font-weight: 600;
+    line-height: 19px;
 }
 .var__item--list-price {
     font-size: 16px;
     color: #000;
     text-align: center; 
+    font-weight: 600;
 }
 .list-price__big  {
     font-size: 40px;
@@ -175,11 +186,13 @@
 }
 .requirement__block--head {
     font-size: 24px;
+    font-weight: 600;
 }
 .requirement__block--text {
     font-size: 16px;
     line-height: 22px;
     margin-top: 9px;
+    font-weight: 400;
 }
 .requirement__block--2text {
     padding-top: 49px;
@@ -187,6 +200,7 @@
     font-size: 18px;
 }
 .block--2text-red {
+    font-weight: 600;
     color: #DF1A38;
 }
 .block--2text-small {

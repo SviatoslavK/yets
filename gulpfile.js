@@ -53,7 +53,10 @@ var config = {
     },
     host: 'localhost',
     port: 9000,
-    logPrefix: "LiveReload"
+    logPrefix: "LiveReload",
+    tunnel: 'yets'
+    // tunnel: "my-private-site"
+
 };
 
 gulp.task('html:build', function () {
@@ -83,7 +86,7 @@ gulp.task('style:build', function () {
         .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
         .pipe(sass())
         .pipe(autoprefixer({
-            browsers: ['last 3 versions', '>1%', 'ie 9'],
+            browsers: ['last 2 versions', 'Safari >= 8'],
             cascade: false
         }))
         .pipe(cleanCSS())

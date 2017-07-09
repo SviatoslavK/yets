@@ -2,7 +2,7 @@
     height: 621px;
     background-image: url(../img/footer_bgc.png);
     @include background;
-    min-width: 1200px;
+    min-width: 1280px;
     padding-top: 219px;
 }
 .footer__info {
@@ -28,6 +28,7 @@ width: 310px;
 .footer__country--header {
     font-size: 24px;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 .footer__country--text {
     line-height: 26px;

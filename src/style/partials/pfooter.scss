@@ -1,6 +1,6 @@
 .pfooter {
     height: 220px;
-    min-width: 1200px;
+    min-width: 1280px;
     background: linear-gradient(to right,#9e139a,#df1A38);
 }
 .pfooter__text {
@@ -8,13 +8,15 @@
     color: #fff;
     font-size: 40px;
     padding-top: 61px;
+    font-weight: 600;
+    line-height: 48px;
 }
 .pfooter__form {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    right: 0;
+    right: 0px;
     width: 350px;
     background-color: #fff;;
     z-index: 1000;

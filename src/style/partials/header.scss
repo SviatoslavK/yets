@@ -4,9 +4,13 @@
 .header {
     height: 1300px;
     // width: 100vw;
-    min-width: 1200px;
+    min-width: 1280px;
     position: relative;
     overflow: hidden; 
+    // display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     display: flex;
     flex-direction: column;
 }
@@ -57,7 +61,7 @@
     letter-spacing: 3.12px;
     font-size: 12px;
     color: #fff;
-    font-weight: 300;
+    font-weight: 600;
 }
 .main__textblock {
     display: flex;
@@ -79,7 +83,7 @@
 // }
 .textblock__header {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 38px;
 }
 .textblock__price {
@@ -87,6 +91,7 @@
     font-size: 40px;
     text-transform: uppercase;
     line-height: 60px;
+    font-weight: 800;
 }
 .textblock__price--bgc {
     background-color: #fff;
@@ -98,14 +103,18 @@
     font-size: 18px;
     color: #CC242A;
     line-height: 22px;
+    font-weight: 400;
+}
+.form__header--bold {
+    font-weight: 600;
 }
 .form__name,
 .form__phone {
     font-family: 'Fira Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 14px;
     color: #000;
-    margin-top: 20px;
+    margin-top: 20px
 }
 .form__name {
     margin-top: 40px;
@@ -148,10 +157,10 @@
 }
 .who__header {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 700;
 }
 .who__text {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     margin-top: 30px;
     line-height: 28px;
