@@ -7,12 +7,9 @@
     min-width: 1280px;
     position: relative;
     overflow: hidden; 
-    // display: flex;
-    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-    display: -ms-flexbox;  /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     display: flex;
     flex-direction: column;
+    flex: 1 1 auto;
 }
 .header__bgc {
     position: absolute;
@@ -36,7 +33,7 @@
     width: 1920px;
     align-self: center;
     // position: absolute;
-    // left: -360px;
+    // left: -320px;
     height: 1300px;
 }
 .header__logo {
@@ -133,7 +130,7 @@
     width: 250px;
     margin-top: 57px;
     height: 59px;
-    display: flex;
+    // display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 800;

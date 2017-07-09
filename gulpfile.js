@@ -86,7 +86,7 @@ gulp.task('style:build', function () {
         .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
         .pipe(sass())
         .pipe(autoprefixer({
-            browsers: ['last 2 versions', 'Safari >= 8'],
+            browsers: ['last 2 versions', 'Safari > 8'],
             cascade: false
         }))
         .pipe(cleanCSS())
