@@ -36,7 +36,7 @@
     position: absolute;
     box-sizing: border-box;
     width: 700px;
-    max-height: 250px;
+    // max-height: 250px;
     right: -50px;
     background-color: #fff;
     padding-left: 45px;
@@ -117,6 +117,10 @@
         width: 160px;
         height: 160px;
         background-image: url(../img/ksenia_z.jpg);
+         & .comment {
+            left: 120%;
+            top: -55%;
+        }
     }
 }
 .clients__client--6 {
@@ -129,8 +133,8 @@
         height: 140px;
         background-image: url(../img/natalia_m.jpg);
         & .comment {
-            left: 0%;
-            top: -210%;
+            left: 120%;
+            top: -40%;
         }
     }
 }
@@ -188,8 +192,9 @@
         width: 138px;
         height: 138px;
         & .comment {
-            left: -440%;
-            top: -205%;
+             left: -450%;
+            top: -285%;
+
         }
     }
 }
@@ -215,6 +220,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .client__secondci {
     border-radius: 50%;
     border: 1px solid #FF0A44;
@@ -233,11 +239,18 @@
     justify-content: center;
     align-items: center;
 }
-
-
+.clients__client:hover>.client__firstci {
+    border:1px solid #FF0A44;
+}
+.client__secondci:hover>.client__thirdci{
+    border:1px solid #FF0A44;
+}
+.border__transparent {
+    border-color: transparent !important;
+}
 .comment__text {
     overflow: auto;
-    height: 160px;
+    // height: 160px;
     
 }
 .comment__close {
@@ -286,4 +299,8 @@
     font-size: 22px;
     margin-bottom: 10px;
     font-weight: 600;
+}
+.comment__link {
+    color: #FF0A44;
+    margin-left: 5px;
 }
