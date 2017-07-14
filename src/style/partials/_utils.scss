@@ -10,7 +10,10 @@
         @media (min-width: 640px) and (max-width: 1199px) { @content; }
     }
     @else if $media == small {
-        @media (min-width: 320px) and (max-width: 639px) { @content; }
+        @media (min-width: 320px) and (max-width: 639px) { @content; 
+        @viewport { 
+        zoom:0.5; 
+    }}
     }
 }
 
@@ -59,6 +62,7 @@
           padding-right: 40px;
      }
 }
+
 ::-webkit-input-placeholder {
     color: #8C8C8C;
     opacity: 1;

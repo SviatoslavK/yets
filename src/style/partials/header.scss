@@ -36,6 +36,9 @@
     right: -31px;
     background-image: url(../img/header_house.png);
     @include background;
+    @include respond-to(tablet) {
+          display: none;
+     }
 }
 .header__images {
     position: absolute;
@@ -44,9 +47,9 @@
     // position: absolute;
     // left: -320px;
     height: 1300px;
-    // @include respond-to(small) {
-    //       left: 0 !important;
-    //  }
+    @include respond-to(tablet) {
+          left: 0 ;
+     }
 }
 .header__logo {
     margin-top: 31px;
