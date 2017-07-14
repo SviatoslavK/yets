@@ -386,6 +386,10 @@ let headerBlock = document.querySelector('.header');
 let headerImg = document.querySelector('.header__images');
 if(window.screen.availWidth >=1200)
 headerImg.style.left = -(1920 - headerBlock.clientWidth) / 2 + 'px';
+if(window.screen.availWidth >320 && window.screen.availWidth < 768) {
+    let viewport = document.querySelector('[name="viewport"]')
+    viewport.setAttribute('content', 'width=device-width, initial-scale=0.5, user-scalable=0');
+}
 
 
 var carousel = new Carousel({
