@@ -4,6 +4,9 @@
     @include background;
     min-width: 1280px;
     padding-top: 219px;
+    @include respond-to(tablet) {
+        display: none;
+     }
 }
 .footer__info {
     width: 100%;

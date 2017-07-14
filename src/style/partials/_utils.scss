@@ -7,10 +7,10 @@
         @media (min-width: 480px) and (max-width: 767px){ @content; }
     }
     @else if $media == tablet {
-        @media (min-width: 768px) and (max-width: 1139px) { @content; }
+        @media (min-width: 640px) and (max-width: 1199px) { @content; }
     }
     @else if $media == small {
-        @media (min-width: 320px) and (max-width: 479px) { @content; }
+        @media (min-width: 320px) and (max-width: 639px) { @content; }
     }
 }
 
@@ -53,6 +53,11 @@
     -moz-osx-font-smoothing: grayscale;
     padding-left: 40px;
     padding-right: 40px;
+    @include respond-to(tablet) {
+          width: 640px;
+          padding-left: 40px;
+          padding-right: 40px;
+     }
 }
 ::-webkit-input-placeholder {
     color: #8C8C8C;

@@ -445,15 +445,13 @@ document.addEventListener('click', (e) => {
     }
 })
 
-// const formData = (form) => {
-//     return 
-// }
-
-// Send mail header__form start__form 
-// let headerForm = document.querySelector('#header__form')
-// let startForm = document.querySelector('#start__form')
-// let footerForm = document.querySelector('#footer__form')
-// let headerFormBtn = headerForm.querySelector('.form__btn')
+const showCallback = (form) => {
+    let popUp = form.querySelector('.form__callback');
+        popUp.style.display = 'block'
+    setTimeout(() => {
+        popUp.style.display = 'none'
+    }, 4000)
+}
 
 $(document).ready(function () {
     $("#header__form").submit(function () {
@@ -461,9 +459,9 @@ $(document).ready(function () {
                type: "GET",
                url: "../mail.php",
                data: $("#header__form").serialize()
-          }).done(function () {
-               alert("Спасибо за заявку!");
-          });
+          }).done(
+               showCallback(document.querySelector('#header__form'))
+          );
           return false;
      });
     $("#start__form").submit(function () {
@@ -471,9 +469,9 @@ $(document).ready(function () {
                type: "GET",
                url: "../mail.php",
                data: $("#start__form").serialize()
-          }).done(function () {
-               alert("Спасибо за заявку!");
-          });
+          }).done(
+               showCallback(document.querySelector('#start__form'))
+          );
           return false;
      });
     $("#footer__form").submit(function () {
@@ -481,9 +479,9 @@ $(document).ready(function () {
                type: "GET",
                url: "../mail.php",
                data: $("#footer__form").serialize()
-          }).done(function () {
-               alert("Спасибо за заявку!");
-          });
+          }).done(
+               showCallback(document.querySelector('#footer__form'))
+          );
           return false;
      });
 });

@@ -8,7 +8,9 @@
     padding-top: 146px;
     height: 991px;
     background-repeat: no-repeat;
-
+@include respond-to(tablet) {
+        display: none;
+     }
 }
 .client__ava {
     height: 90%;

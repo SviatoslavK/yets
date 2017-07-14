@@ -6,6 +6,9 @@
     display: flex;
     padding-top: 67px;
     min-width: 1280px;
+    @include respond-to(tablet) {
+        display: none;
+     }
 }
 .variant_bgc {
     top: 0;

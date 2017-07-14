@@ -1,26 +1,50 @@
 .question {
     padding-top: 106px;
     min-width: 1280px;
+    @include respond-to(tablet) {
+        min-width: 640px;
+        
+     }
 }
 .question__header {
     font-weight: 700;
     font-size: 40px;
     text-align: center;
+    @include respond-to(tablet) {
+        font-size: 60px;
+        line-height: 67px;
+     }
 }
 .question__block {
     display: flex;
     margin-top: 65px;
     justify-content: space-between;
+    @include respond-to(tablet) {
+        flex-direction: column;
+        margin-top: 85px;
+     }
 }
 .question__question {
     width: 15%;
     // background-color: #eee;
+    @include respond-to(tablet) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 80px;
+     }
 }
 .question__mark {
     width: 21px;
     height: 22px;
     background-image: url(../img/q_mark.png);
     @include background;
+    @include respond-to(tablet) {
+        width: 42px;
+        height: 43px;
+        
+     }
 }
 .question__firstbl {
     margin-top: 18px;
@@ -28,6 +52,13 @@
     font-size: 18px;
     line-height: 22px;
     min-height: 75px;
+    @include respond-to(tablet) {
+        font-size: 36px;
+        line-height: 45px;
+        text-align: center;
+        margin-top: 34px;
+        min-height: auto;
+     }
 }
 .question__secondbl {
     color: #CC242A;
@@ -35,4 +66,10 @@
     font-weight: 400;
     line-height: 22px;
     margin-top: 14px;
+    @include respond-to(tablet) {
+        margin-top: 32px;
+        font-size: 36px;
+        line-height: 45px;
+        text-align: center;
+     }
 }

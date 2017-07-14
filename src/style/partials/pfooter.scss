@@ -2,6 +2,9 @@
     height: 220px;
     min-width: 1280px;
     background: linear-gradient(to right,#9e139a,#df1A38);
+    @include respond-to(tablet) {
+        display: none;
+     }
 }
 .pfooter__text {
     width: 644px;
