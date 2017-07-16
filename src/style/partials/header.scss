@@ -28,12 +28,16 @@
     background-image: url(../img/header__bgc.png);
     @include background;
     @include respond-to(tablet) {
+        background: linear-gradient(to right,#9e139a,#df1A38);
+    background-image: url(../img/header__bgc.png);
           background-position: top;
     background-size: cover;
           height: 1058px;
           width: 100%;
      }
     @include respond-to(small) {
+        background: linear-gradient(to right,#9e139a,#df1A38);
+    background-image: url(../img/header__bgc.png);
           background-position: top;
     background-size: cover;
           height: 680px;
