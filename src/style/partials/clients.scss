@@ -11,6 +11,9 @@
 @include respond-to(tablet) {
         display: none;
      }
+@include respond-to(small) {
+        display: none;
+     }
 }
 .client__ava {
     height: 90%;

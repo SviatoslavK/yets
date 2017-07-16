@@ -55,8 +55,6 @@ var config = {
     port: 9000,
     logPrefix: "LiveReload",
     tunnel: 'yets'
-    // tunnel: "my-private-site"
-
 };
 
 gulp.task('html:build', function () {

@@ -5,7 +5,17 @@
     min-width: 1280px;
     padding-top: 219px;
     @include respond-to(tablet) {
-        display: none;
+        min-width: 640px;
+        height: auto;
+        padding-top: 112px;
+        padding-bottom: 200px;
+     }
+    @include respond-to(small) {
+        // display: none;
+        min-width: 320px;
+        height: auto;
+        padding-top: 56px;
+        padding-bottom: 100px;
      }
 }
 .footer__info {
@@ -16,11 +26,31 @@
     background-color: rgba(255,255,255, 0.75);
     padding-left: 39px;
     justify-content: space-between;
+    @include respond-to(tablet) {
+        height: auto;
+    flex-direction: column;
+    padding-left: 0;
+    padding-bottom: 60px;
+    }
+    @include respond-to(small) {
+        height: auto;
+    flex-direction: column;
+    padding-left: 0;
+    padding-bottom: 30px;
+    }
 }
 .footer__country {
     width: 289px;
     height: 100%;
     padding-top: 48px;
+    @include respond-to(tablet) {
+       width: 100% !important; 
+       text-align: center;
+    }
+    @include respond-to(small) {
+       width: 100% !important; 
+       text-align: center;
+    }
 }
 .footer__country--3 {
     width: 220px;
@@ -32,8 +62,23 @@ width: 310px;
     font-size: 24px;
     margin-bottom: 10px;
     font-weight: 600;
+    color: #DF1A38;
+    @include respond-to(tablet) {
+       font-size: 38px;
+    }
+    @include respond-to(small) {
+       font-size: 19px;
+    }
 }
 .footer__country--text {
     line-height: 26px;
 font-size: 18px;
+@include respond-to(tablet) {
+       font-size: 32px;
+       line-height: 39px;
+    }
+    @include respond-to(small) {
+       font-size: 16px;
+       line-height: 19px;
+    }
 }

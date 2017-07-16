@@ -13,6 +13,13 @@
         height: auto;
         padding-bottom: 296px;
      }
+    @include respond-to(small) {
+        min-width: 320px;
+        margin-top: 88px;
+        padding-top: 32px;
+        height: auto;
+        padding-bottom: 148px;
+     }
 }
 .start__header {
     font-weight: 700;
@@ -21,6 +28,11 @@
     @include respond-to(tablet) {
         font-size: 60px;
         line-height: 67px;
+        color: #fff;
+     }
+    @include respond-to(small) {
+        font-size: 30px;
+        line-height: 34px;
         color: #fff;
      }
 }
@@ -36,6 +48,9 @@
     @include respond-to(tablet) {
         height: 100%;
      }
+    @include respond-to(small) {
+        height: 100%;
+     }
 }
 .start_air {
     width: 100%;
@@ -48,6 +63,9 @@
     @include respond-to(tablet) {
         height: 139px;
      }
+    @include respond-to(small) {
+        height: 79px;
+     }
 }
 .start__block {
     margin-top: 40px;
@@ -57,12 +75,18 @@
     @include respond-to(tablet) {
         flex-direction: column;
      }
+    @include respond-to(small) {
+        flex-direction: column;
+     }
 }
 .start__block--item {
     width: 350px;
     height: 100%;
     // background-color: #eee;
     @include respond-to(tablet) {
+        width: 100%;
+     }
+    @include respond-to(small) {
         width: 100%;
      }
 }
@@ -87,6 +111,14 @@
         padding-bottom: 80px;
         border-radius: 4px;
      }
+    @include respond-to(small) {
+        height: auto;
+        padding-top: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 40px;
+        border-radius: 4px;
+     }
 }
 .start__item--header {
     font-size: 24px;
@@ -94,6 +126,9 @@
     font-weight: 600;
     @include respond-to(tablet) {
         font-size: 38px;
+     }
+    @include respond-to(small) {
+        font-size: 19px;
      }
 }
 .start__block--item2,
@@ -119,11 +154,23 @@
         padding-right: 20px;
         border-radius: 4px;
      }
+    @include respond-to(small) {
+        font-size: 19px;
+        line-height: 26px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 4px;
+        padding-top: 15px;
+     }
 }
 .start__block--item2 {
     height: 300px;
     @include respond-to(tablet) {
         margin-top: 20px;
+     }
+    @include respond-to(small) {
+        margin-top: 10px;
+        height: 150px;
      }
 }
 .start__block--item3 {
@@ -131,6 +178,10 @@
     @include respond-to(tablet) {
         margin-top: 20px;
         height: 351px;
+     }
+    @include respond-to(small) {
+        margin-top: 20px;
+        height: 175px;
      }
 }
 .start__block--item4 {
@@ -140,12 +191,20 @@
         margin-top: 20px;
         height: 300px;
      }
+    @include respond-to(small) {
+        margin-top: 10px;
+        height: 150px;
+     }
 }
 .start__block--item5  {
     height: 216px;
     @include respond-to(tablet) {
         margin-top: 20px;
         height: 300px;
+     }
+    @include respond-to(small) {
+        margin-top: 10px;
+        height: 150px;
      }
 }
 .start__sota {
@@ -168,6 +227,12 @@
         font-size: 52px;
         right: 20px;
      }
+    @include respond-to(small) {
+        width: 48px;
+        height: 40px;
+        font-size: 26px;
+        right: 10px;
+     }
 }
 .start__sota--1 {
     position: static;
@@ -177,6 +242,10 @@
     @include respond-to(tablet) {
         flex-direction: column;
         margin-bottom: 37px;
+     }
+    @include respond-to(small) {
+        flex-direction: column;
+        margin-bottom: 18px;
      }
 }
 .start__text--red {
@@ -190,6 +259,15 @@
         }
         & .form__btn {
             margin-top: 56px;
+        }
+    }
+    @include respond-to(small) {
+        width: 100%;
+        & .form__phone {
+            margin-top: 29px;
+        }
+        & .form__btn {
+            margin-top: 28px;
         }
     }
 }

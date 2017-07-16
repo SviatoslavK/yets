@@ -1,3 +1,4 @@
+@import "_utils";
 .js-Carousel {
   background: #272822;
   height: 478px;
@@ -5,6 +6,10 @@
   overflow: hidden;
   position: relative;
   width: 636px;
+  @include respond-to(small) {
+            width: 320px;
+            height: 239px;
+     }
 }
 .js-Carousel > ul {
   height: 478px;
@@ -12,12 +17,18 @@
   margin: 0;
   padding: 0;
   width: 9999px;
+  @include respond-to(small) {
+            height: 239px;
+     }
 }
 .js-Carousel > ul li {
   display: inline-block;
   float: left;
   width: 636px;
   transition: margin-left 0.3s ease;
+  @include respond-to(small) {
+            width: 320px;
+     }
 }
 .js-Carousel > ul li img {
   // max-width: 100%;
@@ -25,6 +36,10 @@
   text-align: center;
   height: 478px;
   width: 636px;
+  @include respond-to(small) {
+            width: 320px;
+            height: 239px;
+     }
 }
 .js-Carousel .js-Carousel-arrowPrev,
 .js-Carousel .js-Carousel-arrowNext {

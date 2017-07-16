@@ -3,7 +3,66 @@
     min-width: 1280px;
     background: linear-gradient(to right,#9e139a,#df1A38);
     @include respond-to(tablet) {
-        display: none;
+    background: linear-gradient(to right top ,#9E139A,#DF1A38);
+    min-width: 640px;
+    height: 562px;
+        // display: none;
+     }
+    @include respond-to(small) {
+    background: linear-gradient(to right top ,#9E139A,#DF1A38);
+    min-width: 320px;
+    height: 281px;
+        // display: none;
+     }
+}
+.pfooter__contact {
+    display: none;
+    text-align: center;
+    color: #fff;
+    @include respond-to(small) {
+    display: block;
+    padding-top: 44px;
+     }
+    @include respond-to(tablet) {
+    display: block;
+    padding-top: 87px;
+     }
+}
+.pfooter__contact--header {
+    @include respond-to(small) {
+        font-size: 30px;
+        line-height: 36px;
+     }
+    @include respond-to(tablet) {
+        line-height: 71px;
+        font-size: 60px;
+     }
+}
+.pfooter__contact--phone,
+.pfooter__contact--login {
+    @include respond-to(small) {
+        line-height: 32px;
+        font-size: 27px;
+        margin-top: 25px;
+     }
+    @include respond-to(tablet) {
+        line-height: 63px;
+        font-size: 54px;
+        margin-top: 51px;
+     }
+}
+.pfooter__contact--viber,
+.pfooter__contact--wechat {
+    color: #E3E3E3;
+    @include respond-to(small) {
+        line-height: 19px;
+        font-size: 16px;
+        margin-top: 6px;
+     }
+    @include respond-to(tablet) {
+        line-height: 38px;
+        font-size: 32px;
+        margin-top: 12px;
      }
 }
 .pfooter__text {
@@ -13,6 +72,12 @@
     padding-top: 61px;
     font-weight: 600;
     line-height: 48px;
+    @include respond-to(tablet) {
+    display: none;
+     }
+    @include respond-to(small) {
+    display: none;
+     }
 }
 .pfooter__form {
     display: flex;
@@ -25,7 +90,13 @@
     z-index: 1000;
     height: 375px;
     top: -85px;
-    box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.11)
+    box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.11);
+    @include respond-to(tablet) {
+        display: none;
+     }
+    @include respond-to(small) {
+        display: none;
+     }
 }
 .pfooter {
     & .container {

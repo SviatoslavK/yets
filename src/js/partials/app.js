@@ -384,12 +384,9 @@ function Carousel(options) {
 // //header img 
 let headerBlock = document.querySelector('.header');
 let headerImg = document.querySelector('.header__images');
+
 if(window.screen.availWidth >=1200)
 headerImg.style.left = -(1920 - headerBlock.clientWidth) / 2 + 'px';
-if(window.screen.availWidth >320 && window.screen.availWidth < 768) {
-    let viewport = document.querySelector('[name="viewport"]')
-    viewport.setAttribute('content', 'width=device-width, initial-scale=0.5, user-scalable=0');
-}
 
 
 var carousel = new Carousel({
@@ -453,6 +450,8 @@ document.addEventListener('click', (e) => {
 const showCallback = (form) => {
     let popUp = form.querySelector('.form__callback');
         popUp.style.display = 'block'
+    let btn = form.querySelector('.form__btn');
+        btn.style.background = '#8E0E3D'
     setTimeout(() => {
         popUp.style.display = 'none'
     }, 4000)

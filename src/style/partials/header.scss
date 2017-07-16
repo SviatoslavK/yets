@@ -14,18 +14,29 @@
           min-width: 640px;
           height: auto;
      }
+    @include respond-to(small) {
+          min-width: 320px;
+          height: auto;
+     }
 }
 .header__bgc {
     position: absolute;
     height: 1300px;
     width: 1107px;
     // left: -360px;
-    background-image: url(../img/header_bgc.png);
+    background: linear-gradient(to right,#9e139a,#df1A38);
+    background-image: url(../img/header__bgc.png);
     @include background;
     @include respond-to(tablet) {
-          background-position: left;
-          background-size: auto;
+          background-position: top;
+    background-size: cover;
           height: 1058px;
+          width: 100%;
+     }
+    @include respond-to(small) {
+          background-position: top;
+    background-size: cover;
+          height: 680px;
      }
 }
 .header__house {
@@ -37,8 +48,55 @@
     background-image: url(../img/header_house.png);
     @include background;
     @include respond-to(tablet) {
-          display: none;
+          left: auto;
+        right: auto;
+        bottom: -290px;
+        top: auto;
+        width: 100vw;
+        height: 120px;
      }
+    @include respond-to(small) {
+        left: auto;
+        right: auto;
+        bottom: 340px;
+        top: auto;
+        width: 100vw;
+        min-height: 50px;
+        height: 60px;
+     }
+}
+.header__contacts {
+    position: absolute;
+    top: -80px;
+    left: 20px;
+    display: flex;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+     @include respond-to(small) {
+        display: none;
+     }
+     @include respond-to(tablet) {
+        display: none;
+     }
+}
+.header__contacts--phone {
+    font-size: 34px;
+    color: #DF1A38;
+    line-height: 40px;
+}
+.header__contacts--viber,
+.header__contacts--wechat {
+    margin-top: 5px;
+}
+.header__contacts--login {
+    box-sizing: border-box;
+    font-size: 24px;
+    padding-top: 5px;
+    color: #DF1A38;
+    line-height: 28px;
+}
+.header__contacts--2 {
+    margin-left: 35px;
 }
 .header__images {
     position: absolute;
@@ -50,12 +108,20 @@
     @include respond-to(tablet) {
           left: 0 ;
      }
+    @include respond-to(small) {
+          left: 0 ;
+     }
 }
 .header__logo {
     margin-top: 31px;
     height: 42px;
     display: flex;
     @include respond-to(tablet) {
+          flex-direction: column;
+          height: auto;
+          align-items: center;
+     }
+    @include respond-to(small) {
           flex-direction: column;
           height: auto;
           align-items: center;
@@ -75,6 +141,13 @@
           width: 343px;
           margin-bottom: 50px;
      }
+    @include respond-to(small) {
+          margin-right: 0;
+          margin-top: 40px;
+          height: 42px;
+          width: 172px;
+          margin-bottom: 25px;
+     }
 }
 .logo__text {
     font-family: 'Jura', sans-serif;
@@ -91,6 +164,11 @@
           font-size: 18px;
           line-height: 37px;
      }
+    @include respond-to(small) {
+          text-align: center;
+          font-size: 9px;
+          line-height: 21px;
+     }
 }
 .main__textblock {
     display: flex;
@@ -100,11 +178,23 @@
           flex-direction: column;
           height: auto;
      }
+@include respond-to(small) {
+          flex-direction: column;
+          height: auto;
+     }
 }
 .main__textblock--1 {
     width: 624px;
     margin-right: 176px;
     padding-top: 15px;
+    @include respond-to(tablet) {
+          width: 100%;
+     }
+    @include respond-to(small) {
+          width: 100%;
+          margin-right: 0;
+          padding-top: 8px;
+     }
 }
 .main__textblock--2 {
     width: 250px;
@@ -112,6 +202,71 @@
     @include respond-to(tablet) {
           width: 100%;
           margin-top: 185px;
+     }
+    @include respond-to(small) {
+          width: 100%;
+          margin-top: 92px;
+     }
+}
+// contact__mobile--phone
+// contact__mobile--viber
+// contact__mobile--login
+// ,
+.contact__mobile {
+    display: none;
+    @include respond-to(tablet) {
+          display: block;
+     }
+    @include respond-to(small) {
+          display: block;
+     }
+}
+.contact__mobile--phone,
+.contact__mobile--login {
+     @include respond-to(tablet) {
+          text-align: center;
+          font-size: 54px;
+          line-height: 61px;
+          color: #DF1A38;
+     }
+     @include respond-to(small) {
+          text-align: center;
+          font-size: 27px;
+          line-height: 32px;
+          color: #DF1A38;
+     }
+}
+.contact__mobile--login {
+     @include respond-to(tablet) {
+          margin-top: 34px;
+     }
+     @include respond-to(small) {
+          margin-top: 17px;
+     }
+}
+.contact__mobile--viber,
+.contact__mobile--wechat {
+     @include respond-to(tablet) {
+          text-align: center;
+          font-size: 32px;
+          line-height: 38px;
+          color: #000;
+          margin-top: 10px;
+     }
+     @include respond-to(small) {
+          text-align: center;
+          font-size: 16px;
+          line-height: 19px;
+          color: #000;
+          margin-top: 5px;
+     }
+}
+.contact__mobile--wechat {
+     @include respond-to(tablet) {
+          margin-bottom: 232px;
+     }
+     @include respond-to(small) {
+          margin-bottom: 126px;
      }
 }
 // .main__textblock--common {
@@ -125,6 +280,10 @@
           font-size: 38px;
           line-height: 51px;
      }
+    @include respond-to(small) {
+          font-size: 19px;
+          line-height: 26px;
+     }
 }
 .textblock__price {
     margin-top: 30px;
@@ -134,7 +293,11 @@
     font-weight: 800;
     @include respond-to(tablet) {
           line-height: 67px;
-          font-size: 60px;
+          font-size: 59px;
+     }
+    @include respond-to(small) {
+          line-height: 34px;
+          font-size: 29px;
      }
 }
 .textblock__price--bgc {
@@ -153,6 +316,11 @@
           line-height: 40px;
           padding-right: 50px;
      }
+    @include respond-to(small) {
+          font-size: 18px;
+          line-height: 20px;
+          padding-right: 25px;
+     }
 }
 .form__header--bold {
     font-weight: 600;
@@ -167,6 +335,9 @@
     margin-top: 20px;
     @include respond-to(tablet) {
           font-size: 26px;
+     }
+    @include respond-to(small) {
+          font-size: 13px;
      }
 }
 .form__name {
@@ -188,6 +359,13 @@
           font-size: 32px;
           padding-left: 20px;
      }
+    @include respond-to(small) {
+          height: 44px;
+          width: 100%;
+          margin-top: 10px;
+          font-size: 16px;
+          padding-left: 10px;
+     }
 }
 .form__btn {
     display: inline-block;
@@ -205,6 +383,12 @@
           height: 120px;
           width: 100%;
           font-size: 32px;
+     }
+    @include respond-to(small) {
+          margin-top: 35px;
+          height: 60px;
+          width: 100%;
+          font-size: 16px;
      }
 }
 .form__btn:hover {
@@ -228,6 +412,15 @@
           height: auto;
           padding-bottom: 160px;
      }
+    @include respond-to(small) {
+          padding-top: 0;
+          padding-left: 0;
+          margin-top: 58px;
+          flex-direction: column;
+          position: relative;
+          height: auto;
+          padding-bottom: 80px;
+     }
 }
 .who__textblock {
     display: inline-block;
@@ -237,12 +430,19 @@
           width: 100%;
           margin-right: 0;
      }
+    @include respond-to(small) {
+          width: 100%;
+          margin-right: 0;
+     }
 }
 .who__header {
     font-size: 40px;
     font-weight: 700;
     @include respond-to(tablet) {
           font-size: 60px;
+     }
+    @include respond-to(small) {
+          font-size: 30px;
      }
 }
 .who__text {
@@ -254,6 +454,11 @@
           font-size: 32px;
           line-height: 45px;
           margin-top: 53px;
+     }
+    @include respond-to(small) {
+          font-size: 16px;
+          line-height: 23px;
+          margin-top: 26px;
      }
 }
 .who__images {
@@ -267,6 +472,12 @@
           width: 640px;
           margin-left: -40px;
      }
+    @include respond-to(small) {
+          margin-top: 27px;
+          width: 320px;
+          margin-left: -20px;
+          height: 239px;
+     }
 }
 .images__border {
     height: 100%;
@@ -279,6 +490,9 @@
 	border-image-slice: 1;
     z-index: 100;
     @include respond-to(tablet) {
+          border: 1px solid #000;
+     }
+    @include respond-to(small) {
           border: 1px solid #000;
      }
 }
@@ -402,6 +616,16 @@ form {
           padding-left: 37px;
           align-items: center;
      }
+    @include respond-to(small) {
+          position: absolute;
+          bottom: 0;
+          height: 44px;
+          border: 1px solid #cacaca;
+          width: 100%;
+          align-items: center;
+          padding-left: 18px;
+          align-items: center;
+     }
 }
 .social__text {
     display: none;
@@ -411,7 +635,12 @@ form {
         text-align: center;
     @include respond-to(tablet) {
         display: block;
-        
+        line-height: 60px;
+     }
+    @include respond-to(small) {
+        display: block;
+        font-size: 18px;
+        line-height: 30px;
      }
 }
 .social__icon {
@@ -424,6 +653,14 @@ form {
         display: flex;
         width: 100%;
         background-size: 60px;
+        background-position: left;
+        background-repeat: no-repeat;
+     }
+    @include respond-to(small) {
+        display: flex;
+        width: 100%;
+        height: 30px;
+        background-size: 30px;
         background-position: left;
         background-repeat: no-repeat;
      }
@@ -442,6 +679,10 @@ form {
     width: 100%;
     height: 100%;
     @include respond-to(tablet) {
+        position: absolute;
+
+     }
+    @include respond-to(small) {
         position: absolute;
 
      }
