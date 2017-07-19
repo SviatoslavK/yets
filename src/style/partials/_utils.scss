@@ -27,6 +27,7 @@ body {
     // max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Exo 2', sans-serif;
 }
 // Background mixin
 @mixin background {
@@ -68,7 +69,23 @@ body {
           padding-right: 20px;
      }
 }
-
+.hidesm {
+    @include respond-to(tablet) {
+         display: none;
+     }
+    @include respond-to(small) {
+         display: none;
+     }
+}
+.hidedesc {
+    display: none;
+    @include respond-to(tablet) {
+         display: block;
+     }
+    @include respond-to(small) {
+         display: block;
+     }
+}
 ::-webkit-input-placeholder {
     color: #8C8C8C;
     opacity: 1;

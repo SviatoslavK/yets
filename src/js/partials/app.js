@@ -430,6 +430,7 @@ const hoverAva = (e) => {
 
 
 avatars.map(a => {
+    if(window.screen.availWidth >= 1280)
     a.addEventListener('click', hoverAva);
 })
 const disableComment = () => {

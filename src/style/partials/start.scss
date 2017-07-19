@@ -185,7 +185,7 @@
         height: 351px;
      }
     @include respond-to(small) {
-        margin-top: 20px;
+        margin-top: 10px;
         height: 175px;
      }
 }
@@ -194,11 +194,11 @@
     height: 265px;
     @include respond-to(tablet) {
         margin-top: 20px;
-        height: 360px;
+        height: 380px;
      }
     @include respond-to(small) {
         margin-top: 10px;
-        height: 180px;
+        height: 190px;
      }
 }
 .start__block--item5  {
