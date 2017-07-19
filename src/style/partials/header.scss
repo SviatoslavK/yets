@@ -29,15 +29,17 @@
     background-color: transparent;
     @include background;
     @include respond-to(tablet) {
-          background-position: top;
-    background-size: cover;
-          height: 1058px;
-          width: 100%;
+        background-color: #8E0E3D;
+        background-position: top;
+        background-size: cover;
+        height: 1058px;
+        width: 100%;
      }
     @include respond-to(small) {
-          background-position: top;
-    background-size: cover;
-          height: 680px;
+        background-color: #8E0E3D;
+        background-position: top;
+        background-size: cover;
+        height: 680px;
      }
 }
 .header__house {

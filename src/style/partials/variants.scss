@@ -262,8 +262,8 @@
     padding-left: 30px;
     background-image: url(../img/sota-small-color.png);
     background-position: 0 7px;
-    background-repeat: no-repeat;
     background-size: 10px;
+    background-repeat: no-repeat;
     line-height: 22px;
      @include respond-to(tablet) {
         font-size: 32px;
@@ -271,6 +271,8 @@
         margin-left: 23px;
         padding-right: 20px;
         margin-top: 22px;
+        background-position: 0 14px;
+        background-size: 20px;
     }
     @include respond-to(small) {
         font-size: 16px;

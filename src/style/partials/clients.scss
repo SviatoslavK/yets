@@ -2,19 +2,45 @@
     font-weight: 700;
     font-size: 40px;
     text-align: center;
+    @include respond-to(tablet) {
+       font-size: 60px;
+       line-height: 71px;
+     }
+    @include respond-to(small) {
+        font-size: 30px;
+       line-height: 36px;
+     }
 }
 .clients .container {
+    @include respond-to(tablet){
+    position: static;
+    }
+    @include respond-to(small){
+    position: static;
+    }
+}
+.client__block {
     @include respond-to(tablet) {
-        // display: none;
+        display: flex;
+        position: absolute;
+        overflow-y: hidden;
+        overflow-x: auto;
+        width: 100%;
+        left: 0;
+        padding-top: 80px;
+        height: 1660px;
+        padding-left: 30px;
      }
     @include respond-to(small) {
         display: flex;
         position: absolute;
         overflow-y: hidden;
-    overflow-x: auto;
-    width: 640px;
-    padding-top: 40px;
-    height: 750px;
+        overflow-x: auto;
+        width: 100%;
+        left: 0;
+        padding-top: 40px;
+        height: 830px;
+        padding-left: 15px;
     }
 }
 .clients {
@@ -22,16 +48,18 @@
     padding-top: 146px;
     height: 991px;
     background-repeat: no-repeat;
-@include respond-to(tablet) {
-        // display: none;
-     }
-@include respond-to(small) {
-            height: 900px;
-            min-width: 320px;
-    margin-top: 88px;
-    padding-top: 32px;
-    padding-bottom: 148px;
-     }
+    @include respond-to(tablet) {
+        height: 1800px;
+        padding-top: 60px;;
+        min-width: 640px;
+        padding-bottom: 140px;
+    }
+    @include respond-to(small) {
+        height: 900px;
+        padding-top: 30px;;
+        min-width: 320px;
+        padding-bottom: 70px;
+    }
 }
 .client__ava {
     height: 90%;
@@ -45,7 +73,11 @@
     position: relative;
     @include background;
     @include respond-to(tablet) {
-        // display: none;
+        width: 325px !important;
+        height: 325px !important;
+        min-width: 325px !important;
+        min-height: 325px !important;
+        position: relative;
      }
     @include respond-to(small) {
         width: 163px !important;
@@ -64,7 +96,11 @@
     justify-content: center;
     align-items: center;
     @include respond-to(tablet) {
-        // display: none;
+        position: static;
+        min-width: 440px !important;
+        min-height: 440px !important;
+        margin-left: 60px;
+        margin-right: 60px;
      }
     @include respond-to(small) {
         position: static;
@@ -95,21 +131,29 @@
     // overflow: hidden;
     box-shadow: 0 0 9px 0 rgba(224,224,224,0.5);
      @include respond-to(tablet) {
-        // display: none;
+        display: block;
+        left: -120px !important;
+        top: 440px !important;
+        width: 560px !important;
+        box-shadow: none;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+        font-size: 36px;
+        line-height: 60px;
      }
     @include respond-to(small) {
         display: block;
-    left: -60px !important;
-    top: 220px !important;
-    width: 280px !important;
-    box-shadow: none;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 30px;
+        left: -60px !important;
+        top: 220px !important;
+        width: 280px !important;
+        box-shadow: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
     }
-    
 }
 .clients__client--1 {
     height: 215px;
@@ -128,6 +172,12 @@
     width: 240px;
     top: 145px;
     left: 240px;
+    @include respond-to(tablet) {
+        height: 440px;
+     }
+     @include respond-to(small) {
+        height: 220px;
+     }
     & .client__ava {
         background-image: url(../img/client_xz2.jpg);
         width: 171x;
@@ -158,6 +208,12 @@
     width: 227px;
     top: 85px;
     left: 923px;
+    @include respond-to(tablet) {
+         height: 440px;
+     }
+     @include respond-to(small) {
+        height: 220px;
+     }
      & .client__ava {
         background-image: url(../img/client_xz.jpg);
         width: 180px;
@@ -263,6 +319,12 @@
     width: 239px;
     top: 460px;
     left: 890px;
+    @include respond-to(tablet) {
+        height: 440px;
+     }
+     @include respond-to(small) {
+        height: 220px;
+     }
      & .client__ava {
         background-image: url(../img/julia_xp.jpg);
         & .comment {
@@ -323,7 +385,7 @@
     right: 17px;top: 17px;
     @include respond-to(tablet) {
         display: none;
-     }
+    }
     @include respond-to(small) {
         display: none;
     }
@@ -365,12 +427,23 @@
     font-size: 22px;
     margin-bottom: 10px;
     font-weight: 600;
+    @include respond-to(tablet) {
+        font-size: 38px;
+        line-height: 45px;
+     }
+    @include respond-to(small) {
+        font-size: 19px;
+        line-height: 23px;
+    }
 }
 .comment__link {
     color: #FF0A44;
     margin-left: 5px;
     @include respond-to(tablet) {
-        // display: none;
+        display: block;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 10px;
      }
     @include respond-to(small) {
         display: block;
