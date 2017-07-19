@@ -87,7 +87,7 @@ gulp.task('style:build', function () {
             browsers: ['last 2 versions', 'Safari > 8'],
             cascade: false
         }))
-        .pipe(cleanCSS())
+        // .pipe(cleanCSS())
         .pipe(gulp.dest(path.build.css))
         .pipe(notify("CSS Done!!!"))
         .pipe(reload({ stream: true }));

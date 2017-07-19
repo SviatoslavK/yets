@@ -455,7 +455,8 @@ const showCallback = (form) => {
     let btn = form.querySelector('.form__btn');
         btn.style.background = '#8E0E3D'
     setTimeout(() => {
-        popUp.style.display = 'none'
+        btn.style.background = 'linear-gradient(to right,#9e139a,#df1A38)';
+        popUp.style.display = 'none';
     }, 4000)
 }
 
