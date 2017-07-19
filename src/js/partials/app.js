@@ -385,9 +385,10 @@ function Carousel(options) {
 let headerBlock = document.querySelector('.header');
 let headerImg = document.querySelector('.header__images');
 
-if(window.screen.availWidth >=1200)
+if(window.screen.availWidth >=1280 && window.screen.availWidth <= 1920)
 headerImg.style.left = -(1920 - headerBlock.clientWidth) / 2 + 'px';
-
+else if(window.screen.availWidth >= 1920)
+headerImg.style.left = (headerBlock.clientWidth - 1920) / 2 + 'px';
 
 var carousel = new Carousel({
     elem: 'carousel',    // id of the carousel container

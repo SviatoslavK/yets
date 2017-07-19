@@ -23,7 +23,11 @@
 //         @content
 //             }
 // }
-
+body {
+    // max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
 // Background mixin
 @mixin background {
     background: {
